@@ -15,7 +15,6 @@ public class Main {
             System.out.println("5. Salir");
             System.out.print("Elige una opción: ");
 
-            // Validación básica de entrada
             if (scanner.hasNextInt()) {
                 opcion = scanner.nextInt();
                 scanner.nextLine();
