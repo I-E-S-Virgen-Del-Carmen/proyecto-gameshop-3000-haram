@@ -18,25 +18,25 @@ public class Main {
             // Validación básica de entrada
             if (scanner.hasNextInt()) {
                 opcion = scanner.nextInt();
-                scanner.nextLine(); // Limpiar buffer
+                scanner.nextLine();
             } else {
                 System.out.println("Por favor ingresa un número válido.");
-                scanner.nextLine(); // Limpiar buffer
+                scanner.nextLine();
                 continue;
             }
 
             switch (opcion) {
                 case 1:
-                    Cliente.altaCliente(); // Llama al método de Cliente
+                    Cliente.altaCliente();
                     break;
                 case 2:
-                    Cliente.listarClientes(); // Llama al método de Cliente
+                    Cliente.listarClientes();
                     break;
                 case 3:
-                    Juego.altaJuego(); // Llama al método de Juego
+                    Juego.altaJuego();
                     break;
                 case 4:
-                    Juego.listarJuegos(); // Llama al método de Juego
+                    Juego.listarJuegos();
                     break;
                 case 5:
                     System.out.println("Saliendo del programa...");
@@ -46,6 +46,6 @@ public class Main {
             }
         } while (opcion != 5);
 
-        scanner.close(); // Cerramos Scanner al salir
+        scanner.close();
     }
 }
